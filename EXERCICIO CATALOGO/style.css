@@ -1,0 +1,90 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    margin-bottom: 2rem;
+}
+
+
+/* Main */
+
+main{
+    background-color: #F5F5F5;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.teacher__container{
+    max-width: 450px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.teacher__img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.teacher__name{
+    font-weight: 900;
+}
+
+.teacher__price{
+    font-weight: 700;
+    color: #F52273;
+}
+
+.teacher__description{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.teacher__contract{
+    display: flex;
+    justify-content: space-between;
+}
+
+.teacher__contract__hours{
+    width: 48%;
+    color: #565656;
+    background-color: #F5F5F5;
+    outline: none;
+    border: 1px solid #c4c4c4;
+    padding: 1rem 0;
+    text-align: center;
+    
+}
+
+.teacher__contract__btn{
+    width: 48%;
+    color: #fff;
+    background-color: #F52273;
+    border: none;
+    font-weight: 900;
+    transition: background-color 0.5s;
+}
+
+.teacher__contract__btn:hover{
+    background-color: #cd1c60;
+    cursor: pointer;
+}
+
+
+/* Breakpoints */
