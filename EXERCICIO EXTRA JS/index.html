@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login TreinaWeb</title>
+    <script src="scripts.js" defer></script>
+  </head>
+
+  <body>
+    <div class="form-container">
+      <div class="form-content">
+        <!--Conteudo do formulario-->
+        <img
+          src="img/logo-treinaweb.webp"
+          alt="logo da treinawewb"
+          width="200px"
+          class="logo-tw"
+        />
+        <form link class="form-login">
+          <h2>Acesse a sua conta</h2>
+          <div class="form-field">
+            <!--campo do formulario-->
+            <label for="login">CPF ou E-mail</label>
+            <input
+              type="text"
+              id="login"
+              placeholder="CPF ou E-mail"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <div class="password-field">
+              <!--Campo da senha-->
+              <label for="senha">Senha</label>
+              <a href="#">Esqueci minha senha</a>
+            </div>
+            <input id="senha" type="password" placeholder="Senha" required />
+          </div>
+          <button type="submit" onclick="logar(); return false">
+            Entrar na minha conta
+          </button>
+          <div class="divisor">
+            <hr />
+            <span>ou</span>
+            <hr />
+          </div>
+          <a href="https://www.google.com" target="_blank" class="google-login"
+            ><img src="../img/google-icon.png" alt="" /> Fazer login com o
+            Google</a
+          >
+        </form>
+        <p>Não tem uma conta? Veja <a href="#">nossos planos.</a></p>
+      </div>
+    </div>
+  </body>
+</html>
