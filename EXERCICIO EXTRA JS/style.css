@@ -4,6 +4,20 @@ body{
     background-color: #F8fafc;
 }
 
+
+
+.input-box #btn{
+    position: relative;
+        background: #333;
+        color: #fff;
+        cursor: pointer;
+        /* font-size: 24px; */
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 8px;
+}
+
+/* Formulario */
 .form-container{
     width: 100vw;
     height: 100vh;
