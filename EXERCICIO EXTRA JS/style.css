@@ -4,7 +4,13 @@ body{
     background-color: #F8fafc;
 }
 
-
+.input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
 
 .input-box #btn{
     position: relative;
@@ -40,7 +46,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: white;
     border-radius: 4px;
     border: solid 1px #ccccccbe;
     padding: 20px 30px;
