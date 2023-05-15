@@ -1,7 +1,16 @@
-const passwordInput = document.getElementById("password")
-let newPassword = null;
-const button = document.getElementById("btn")
+// Mensagem
 
+let mensagem = document.getElementById("mensagem")
+let newPassword = null;
+
+function carregar(){
+newPassword = getPassword()
+mensagem.innerText = "A senha enviado pelo email é: " + newPassword;
+}
+
+window.addEventListener("load", carregar)
+
+// Gerador 
 function getPassword() {
       const chars = "0123456789";
       const passwordLength = 6;
@@ -14,13 +23,6 @@ function getPassword() {
       return password.toString()
     }
 
-    button.addEventListener("click", () => {
-      newPassword = getPassword()
-      passwordInput.value = newPassword;
-    })
-
-    
-
 // Validação
 function logar(){
       const login = document.getElementById("login").value;
@@ -31,5 +33,6 @@ function logar(){
       location.replace("https://www.treinaweb.com.br");
      }else{
         alert('Usuario ou senha incorretos');
+        carregar()
      }
  }

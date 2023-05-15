@@ -4,23 +4,8 @@ body{
     background-color: #F8fafc;
 }
 
-.input-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.input-box #btn{
-    position: relative;
-        background: #333;
-        color: #fff;
-        cursor: pointer;
-        /* font-size: 24px; */
-        display: inline-block;
-        padding: 10px 15px;
-        border-radius: 8px;
+span{
+    color: red;
 }
 
 /* Formulario */
